@@ -47,6 +47,21 @@
 
 <body class="karsar">
 
+
+
+  <!---====================
+        preloader section
+      =====================-->
+          
+ 
+<div id="overlay">
+<div id="preloader">
+  <div id="loader"></div>
+</div>
+</div>
+
+
+
   <!-- This is the first page which will include the 4 and 8 divisions -->
 <section>
 
@@ -1161,6 +1176,21 @@ window.onload= function(){
  <script src="jquery/jquery.min.js"></script>
  <script src="js/main.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+<script src="main.js"></script>
+
+
+     <script>
+          var overlay=
+        document.getElementById("overlay");
+        window.addEventListener('load',function()
+         {
+          overlay.style.display='none';
+          })
+        </script>
+
+
 
 </body>
 </html>
