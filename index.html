@@ -86,7 +86,7 @@
     
   </div>
 
-  <div  id="particles-js" style="background-color: black; height: 800px; width: 1218px;background-repeat: no-repeat ; background-image: url('img/stars-1246590_1280.jpg');" class="col-lg-8" >
+  <div  id="particles-js" style="background-color: black; height: 800px; width: 1218px;background-repeat: no-repeat ; background-image: url('img/stars-1246590_1280.jpg');" class="col-lg-8 img-responsive" >
     <!-- <img style="height: 600px" src="img/6.jpg"> -->
 
 <style type="text/css">
@@ -112,21 +112,21 @@
 </style>
 
 
-<div style="color: red"  id=rocket1> <img src="img/rocket-312767.png" height="200" width="200"></div>
+<div style="color: red"  id=rocket1> <img class="img-responsive" src="img/rocket-312767.png" height="200" width="200"></div>
 
-<div data-aos="zoom-in-up" data-aos-duration="10" style="color: white; margin-left: 960px; margin-top: " id=rocket1> <a href="#about"> <img src="img/planet_earth.png" height="200" width="200"></a>  <h4 style="margin-left: 30px; margin-bottom: 100px;font-weight: bolder; font-family: 'Varela Round', sans-serif;" >ABOUT US</h4> </div>
+<div data-aos="zoom-in-up" data-aos-duration="10" style="color: white; margin-left: 180px; margin-top: 180px; position: absolute;" id=earth> <a href="#about"> <img class="img-responsive" src="img/planet_earth.png" height="100" width="100"></a>  <h4 style="margin-left: 30px; margin-bottom: 100px;font-weight: bolder; font-family: 'Varela Round', sans-serif;" >ABOUT US</h4> </div>
 
   
-<div data-aos="zoom-in-down" data-aos-duration="50" style="color: white; margin-left: 250px; margin-top: 300px" id=rocket11> <a href="#innovation"> <img src="img/planet_mars.png" height="200" width="200"></a>  <h4 style="margin-left: 30px; margin-bottom: 100px;font-weight: bolder;font-family: 'Varela Round', sans-serif; " class="anim-typewriter">OUR INNOVATIONS</h4> </div>
+<div data-aos="zoom-in-down" data-aos-duration="50" style="color: white; margin-left: 480px; margin-top: 480px; position: absolute;" id=mars> <a href="#innovation"> <img class="img-responsive" src="img/planet_mars.png" height="100" width="100"></a>  <h4 style="margin-left: 30px; margin-bottom: 100px;font-weight: bolder;font-family: 'Varela Round', sans-serif; " class="anim-typewriter">OUR INNOVATIONS</h4> </div>
 
 
-<div data-aos="zoom-in-left" data-aos-duration="500" style="color: white; margin-left: 800px; margin-top: 200px" id=rocket> <a href="#product"> <img src="img/planet-venus.png" height="200" width="200"></a>  <h4 style="margin-left: 30px; margin-bottom: 100px;font-weight: bolder; font-family: 'Varela Round', sans-serif;" class="anim-typewriter">OUR PRODUCTS</h4> </div>
+<div data-aos="zoom-in-left" data-aos-duration="500" style="color: white; margin-left: 480px; margin-top: 480px; position: absolute;" id=product> <a href="#product"> <img class="img-responsive" src="img/planet-venus.png" height="100" width="100"></a>  <h4 style="margin-left: 30px; margin-bottom: 100px;font-weight: bolder; font-family: 'Varela Round', sans-serif;" class="anim-typewriter">OUR PRODUCTS</h4> </div>
 
 
-<div data-aos="zoom-in-right" data-aos-duration="1000" style="color: white;margin-top: 430px " id=rocket > <a href="#join"> <img src="img/planet-mercury.png" height="200" width="200"></a>  <h4 style="margin-left: 30px; margin-bottom: 100px;font-weight: bolder;font-family: 'Varela Round', sans-serif; " class="anim-typewriter" >JOIN US</h4> </div>
+<div data-aos="zoom-in-right" data-aos-duration="1000" style="color: white;margin-left: 480px; margin-top: 480px; position: absolute; " id=rocket12 > <a href="#join"> <img class="img-responsive" src="img/planet-mercury.png" height="100" width="100"></a>  <h4 style="margin-left: 30px; margin-bottom: 100px;font-weight: bolder;font-family: 'Varela Round', sans-serif; " class="anim-typewriter" >JOIN US</h4> </div>
 
 
-<div data-aos="zoom-in-up" data-aos-duration="5000" style="color: white; margin-left: 500px; margin-top: 350px" id=rocket> <a href="#contact"> <img src="img/planet_saturn.png" height="200" width="300"></a>  <h4 style="margin-left: 90px; margin-top: -5px;font-weight: bolder; font-family: 'Varela Round', sans-serif; " class="anim-typewriter">CONTACT US</h4> </div>
+<div data-aos="zoom-in-up" data-aos-duration="5000" style="color: white; margin-left: 480px; margin-top: 480px; position: absolute;" id=rocket45> <a href="#contact"> <img class="img-responsive" src="img/planet_saturn.png" height="100" width="200"></a>  <h4 style="margin-left: 90px; margin-top: -5px;font-weight: bolder; font-family: 'Varela Round', sans-serif; " class="anim-typewriter">CONTACT US</h4> </div>
   
   </div>
 
@@ -1069,92 +1069,6 @@ var target = document.getElementById('rocket1');
 }
 
 </script>
-<!-- 
-==============================================================
-
-FIRST IMAGE -->
-
-
-<!-- 
-
-<script type="text/javascript">
-  
-window.onload= function(){
-  var max_width = window.innerWidth;
-  var max_height = window.innerHeight;
-  
-  var directions = {left:1,up:2,right:3,down:4}
-  var direction = getRandomDirection();
-  var distance = getRandomDistance();
-  
-  //var target = document.getElementById("ghost1");
-  
-  var target = document.getElementById('rocket');
-  var target_pos = {top:0,left:0}
-  
-  var i = 0;
-  
-  var render_rate = 40;
-  var move_step = 2;
-  
-  setInterval(function(){
-      i++;
-      if(i > distance){
-         distance = getRandomDistance();
-         direction = getRandomDirection();
-         i = 0;
-      }
-      move(target,direction,move_step)
-  },render_rate)
-  
-  function getRandomDistance(){
-      return Math.floor((Math.random() * 20) + 1) + 5;
-  }
-  
-  function getRandomDirection(){
-      return Math.floor((Math.random() * 4) + 1);
-  }
-  
-  function move(el,direction,step){
-    switch(direction){
-       case directions.left: {
-         if(target_pos.left < max_width){
-             target_pos.left += step;
-             target.style.left = target_pos.left + "px";
-         }
-         break;
-       }
-       case directions.up: {
-         if(target_pos.top < max_height){
-             target_pos.top += step;
-             target.style.top = target_pos.top + "px";
-         }
-         break;
-       }
-        
-       case directions.right: {
-         if(target_pos.left > 0){
-            target_pos.left -= step;
-            target.style.left = target_pos.left + "px";
-         }
-         break;
-       }
-        
-       case directions.down: {
-         if(target_pos.top > 0){
-            target_pos.top -= step;
-            target.style.top = target_pos.top + "px";
-         }
-         break;
-       }
-    }
-  }
- }
-
-
-</script>
-
- -->
 
 
 <script src="js/particles.js">
@@ -1189,6 +1103,229 @@ window.onload= function(){
           overlay.style.display='none';
           })
         </script>
+
+
+
+<script type="text/javascript">
+
+
+( function() {
+
+  window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+  // var field = document.getElementById("field");
+  var ball = document.getElementById("earth");
+  
+
+  var maxX = 900;
+  var maxY = 900;
+
+  var duration = 4; // seconds
+  var gridSize = 100; // pixels
+
+  var start = null;
+  var stretchFactor;
+
+  function step(timestamp)
+  {
+    var progress, x, y;
+    if(start === null) {
+      start = timestamp;
+      stretchFactor = 1 + (Math.random() * 3);
+    }
+
+    progress = (timestamp - start) / duration / 1000; // percent
+
+    x = stretchFactor * Math.sin(progress * 2 * Math.PI); // x = ƒ(t)
+    y = Math.cos(progress * 2 * Math.PI); // y = ƒ(t)
+
+    ball.style.left = maxX/2 + (gridSize * x) + "px";
+    ball.style.bottom = maxY/2 + (gridSize * y) + "px";
+
+    if(progress >= 1) start = null; // reset to start position
+    requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
+
+})();
+
+
+// second script starts
+
+( function() {
+
+  window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+  // var field = document.getElementById("field");
+  var ball = document.getElementById( "mars");
+  
+
+  var maxX = 800;
+  var maxY = 800;
+ 
+  var duration = 10; // seconds
+  var gridSize = 60; // pixels
+
+  var start = null;
+  var stretchFactor;
+
+  function step(timestamp)
+  {
+    var progress, x, y;
+    if(start === null) {
+      start = timestamp;
+      stretchFactor = 1 + (Math.random() * 3);
+    }
+
+    progress = (timestamp - start) / duration / 1000; // percent
+
+    x = stretchFactor * Math.sin(progress * 2 * Math.PI); // x = ƒ(t)
+    y = Math.cos(progress * 2 * Math.PI); // y = ƒ(t)
+
+    ball.style.left = maxX/2 + (gridSize * x) + "px";
+    ball.style.bottom = maxY/2 + (gridSize * y) + "px";
+
+    if(progress >= 1) start = null; // reset to start position
+    requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
+
+})();
+
+ // THIRD SCRIPT starts
+
+( function() {
+
+  window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+  // var field = document.getElementById("field");
+  var ball = document.getElementById("product");
+  
+
+  var maxX = 50;
+  var maxY = 50;
+ 
+  var duration = 6; // seconds
+  var gridSize = 60; // pixels
+
+  var start = null;
+  var stretchFactor;
+
+  function step(timestamp)
+  {
+    var progress, x, y;
+    if(start === null) {
+      start = timestamp;
+      stretchFactor = 1 + (Math.random() * 3);
+    }
+
+    progress = (timestamp - start) / duration / 1000; // percent
+
+    x = stretchFactor * Math.sin(progress * 2 * Math.PI); // x = ƒ(t)
+    y = Math.cos(progress * 2 * Math.PI); // y = ƒ(t)
+
+    ball.style.left = maxX/2 + (gridSize * x) + "px";
+    ball.style.bottom = maxY/2 + (gridSize * y) + "px";
+
+    if(progress >= 1) start = null; // reset to start position
+    requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
+
+})();
+
+
+ // fourth SCRIPT starts
+
+( function() {
+
+  window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+  // var field = document.getElementById("field");
+  var ball = document.getElementById( "rocket45");
+  
+
+  var maxX = 600;
+  var maxY = 600;
+ 
+  var duration = 10; // seconds
+  var gridSize = 60; // pixels
+
+  var start = null;
+  var stretchFactor;
+
+  function step(timestamp)
+  {
+    var progress, x, y;
+    if(start === null) {
+      start = timestamp;
+      stretchFactor = 1 + (Math.random() * 3);
+    }
+
+    progress = (timestamp - start) / duration / 1000; // percent
+
+    x = stretchFactor * Math.sin(progress * 2 * Math.PI); // x = ƒ(t)
+    y = Math.cos(progress * 2 * Math.PI); // y = ƒ(t)
+
+    ball.style.left = maxX/2 + (gridSize * x) + "px";
+    ball.style.bottom = maxY/2 + (gridSize * y) + "px";
+
+    if(progress >= 1) start = null; // reset to start position
+    requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
+
+})();
+
+
+ // fifth SCRIPT starts
+( function() {
+
+  window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+  // var field = document.getElementById("field");
+  var ball = document.getElementById( "rocket12");
+  
+
+  var maxX = 200;
+  var maxY = 200;
+ 
+  var duration = 8; // seconds
+  var gridSize = 70; // pixels
+
+  var start = null;
+  var stretchFactor;
+
+  function step(timestamp)
+  {
+    var progress, x, y;
+    if(start === null) {
+      start = timestamp;
+      stretchFactor = 1 + (Math.random() * 3);
+    }
+
+    progress = (timestamp - start) / duration / 1000; // percent
+
+    x = stretchFactor * Math.sin(progress * 2 * Math.PI); // x = ƒ(t)
+    y = Math.cos(progress * 2 * Math.PI); // y = ƒ(t)
+
+    ball.style.left = maxX/2 + (gridSize * x) + "px";
+    ball.style.bottom = maxY/2 + (gridSize * y) + "px";
+
+    if(progress >= 1) start = null; // reset to start position
+    requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
+
+})();
+
+
+</script>
 
 
 
