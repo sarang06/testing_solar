@@ -5,6 +5,10 @@ html, body {
   }
 
 
+ p{
+   text-align: justify;
+ } 
+
 
 .mera-lal{
   color: #ff0202;
@@ -68,7 +72,8 @@ h3{
 
 #nav-cont{
 	color: #ff0202;
-	font-weight: bold;
+  font-weight: bold;
+  padding-left: 40px;
 }
 
 .aligncenter{
@@ -79,10 +84,13 @@ h3{
 
 .nav-cont1{
 	color: #ff0202;
-	font-weight: bold;	
+  font-weight: bold;	
+  text-align: right;
 }
 
-
+.navbar-nav{
+  text-align: right;
+}
 
 /* About us */
 
@@ -270,3 +278,28 @@ testimonial section */
                     margin-top: 30px;
                 }
             }
+
+
+
+/* footer section */
+
+.footer{
+  background-color: #36342f ;
+  /* height: 100px; */
+  margin-top: 50px;
+  color: white;
+}
+
+
+.con{
+  padding: 10px;
+  
+} 
+
+.uper-se-gap{
+  padding-top: 20px
+}
+
+.gap{
+  padding-left: 70px;
+}
