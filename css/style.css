@@ -1,4 +1,8 @@
-
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  }
 
 
 
@@ -25,11 +29,6 @@
 	padding-top: 50px;
 	margin-left: 70px;
 	
-}
-
-body{
-	
-	font-family: 'Lato', sans-serif;
 }
 
 h5{
