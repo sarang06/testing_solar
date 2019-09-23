@@ -5,8 +5,9 @@
   background-image: url('../img/startup-594091_1920.jpg');
   background-repeat: no-repeat;
 	width: 100%; 
-	background-attachment: ;
-	height: 50vh;	
+	background-attachment: fixed;
+  height: 50vh;
+  opacity: 0.7;	
 
 }
 
