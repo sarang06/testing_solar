@@ -5,6 +5,17 @@ html, body {
   }
 
 
+/* 
+.navbar{
+
+
+  overflow: hidden;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  background-color: white;
+} */
+
  p{
    text-align: justify;
  } 
@@ -17,12 +28,12 @@ html, body {
 
 
 #home{
-  background-image: url('../img/london-eye-945497_1920.jpg');
+  background-image: url('../img/office-1209640_1920 (1).jpg');
   background-repeat: no-repeat;
 	width: 100%; 
-	background-attachment: ;
+	
   height: 100vh;
-  opacity: ;	
+  	
 
 }
 
@@ -30,7 +41,7 @@ html, body {
 
 #twri{
 
-	padding-top: 50px;
+	padding-top: 150px;
 	margin-left: 70px;
 	
 }
@@ -68,6 +79,9 @@ h3{
 	text-align: center;
 	
 
+}
+#nav-color{
+  background-color: #fff;
 }
 
 #nav-cont{
@@ -183,7 +197,8 @@ testimonial section */
   }
 
   .linekipadding{
-	  margin-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
 
