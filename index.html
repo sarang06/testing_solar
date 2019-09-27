@@ -48,7 +48,7 @@
             
 
             <form>
-                    <input type="text" id="verificationcode" value="enter verification">
+                    <input type="text" id="8" value="enter verification">
                     <input type="button" value="Submit" onclick="send();">
 
 
@@ -149,7 +149,7 @@
 
                                 
         // code for phone verificaiton  
-        firebase.auth().languageCode = 'it';
+        firebase.auth().useDeviceLanguage();
 // To apply the default browser preference instead of explicitly setting it.
 // firebase.auth().useDeviceLanguage();
 
@@ -164,7 +164,9 @@ window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-contai
 
 function send(){
 
-    firebase.auth().signInWithPhoneNumber('+919993171180', window.recaptchaVerifier) 
+var phone= document.getElementById('8');
+
+    firebase.auth().signInWithPhoneNumber(phone, window.recaptchaVerifier) 
 .then(function(confirmationResult) {
 
 confirmationResult.confirm(getElementById('cd'));
