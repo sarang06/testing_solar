@@ -1,0 +1,319 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  }
+
+
+ 
+.navbar{
+
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px 8px #888888;
+
+} 
+
+ p{
+   text-align: justify;
+ } 
+
+
+.mera-lal{
+  color: #ff0202;
+  font-weight: bold;
+}
+
+
+#home{
+  background-image: url('../img/vectorstock_2092576.jpg');
+  background-repeat: no-repeat;
+	width: 100%; 
+	
+  height: 100vh;
+  	
+
+}
+
+
+
+#twri{
+
+	padding-top: 150px;
+	margin-left: 70px;
+	
+}
+
+h5{
+	
+	color:  #ff0202;
+	/* color: #007bff; */
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.chalo{	
+	color:rgb(250, 68, 68); font-weight: bolder!important; font-size: 70px;
+}
+
+.chalnewala{
+	color: rgb(86, 67, 255);
+	font-weight: bolder;
+}
+
+h3{
+
+	color: black;
+	font-weight: bold;
+
+}
+.neli-heading{
+
+	color:black;
+	font-weight: bold;
+}
+
+.heading{
+	text-align: center;
+	
+
+}
+#nav-color{
+  background-color: #fff;
+}
+
+#nav-cont{
+	color: #ff0202;
+  font-weight: bold;
+  padding-left: 40px;
+}
+
+.aligncenter{
+
+	align-content: center;
+
+}
+
+.nav-cont1{
+	color: #ff0202;
+  font-weight: bold;	
+  text-align: right;
+}
+
+.navbar-nav{
+  text-align: right;
+}
+
+/* About us */
+
+.card-title{
+
+	font-weight: bold;
+}
+
+
+/* 
+testimonial section */
+
+.neli-heading
+
+
+
+/* team section */
+
+.india{
+
+	background-color:rgb(255, 173, 180);
+	 height: 300px;
+}
+
+
+/* Three columns side by side */
+.column {
+	float: left;
+	width: 33.3%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+	.column {
+	  width: 100%;
+	  display: block;
+	}
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+	padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  
+  .title {
+	color: grey;
+  }
+  
+  .button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+  }
+  
+  .button:hover {
+	background-color: #555;
+  }
+
+  .testimonial-card{
+	  width: 100%;
+	  text-align: center;
+
+  }
+
+
+  .solidline {
+	border-top: 1px solid #e9e9e9;
+	margin: 0 0 10px;
+	
+  }
+
+  .linekipadding{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+
+
+
+
+
+   /*==================
+               contact-part
+            ==================*/
+
+            .contact{
+                background-color: #1a1a1a;
+                border-top: 3px solid #fff;
+                margin-top: 100px;
+            }
+
+            .contact-heading h1{
+            text-transform: uppercase;
+            font-family: 'Dosis',sans-serif;
+            font-weight: 800;
+            color: #fff;
+            padding: 30px;
+            } 
+            .contact-list h3{
+                font-size: 20px;
+                font-weight: 500;
+                font-family: 'Open sans',sans-serif;
+                color: #fff;
+            } 
+            .contact-list i{
+                background-color: #3da7fb;
+                color: #fff;
+                border-radius: 50%;
+                padding:15px;
+            } 
+            .contact-no h3{
+                color: #fff;
+                font-size: 20px;
+            }
+            .contact-no i{
+                background-color: #3da7fb;
+                color: #fff;
+                border-radius: 50%;
+                padding: 15px;
+            }
+           .message-heading h1{
+             text-transform: uppercase;
+             font-family: 'Dosis',sans-serif;
+             font-weight: 800;
+             padding: 50px;
+            }
+            
+            .form-content {
+			   margin-bottom: 20px;
+			   
+             }
+
+            .form-content input {
+              height: 40px;
+              margin-bottom: 20px;
+            }
+            .form-content select{
+              height: 40px;
+             margin-bottom: 20px;
+            }
+
+            textarea {
+              height: 162px !important;
+              margin: 0 0 20px;
+              padding: 20px 10px !important;
+              }
+
+           .sent-button {
+             padding: 10px 40px !important;
+             margin: 0;
+             }
+
+            .contact-form button.btn {
+              border: 0;
+              background-color: #00c853!important;
+              color: #fff;
+              font-family: 'Open sans',sans-serif;
+             }
+
+             .form-control:focus {
+              border-color: #ccc;
+              box-shadow: none;
+              }
+            @media(max-width: 767px){
+                .google-map-area{
+                    margin-top: 30px;
+                }
+            }
+
+
+
+/* footer section */
+
+.footer{
+  background-color: #36342f ;
+  /* height: 100px; */
+  margin-top: 50px;
+  color: white;
+}
+
+
+.con{
+  padding: 10px;
+  
+} 
+
+.uper-se-gap{
+  padding-top: 20px
+}
+
+.gap{
+  padding-left: 70px;
+  text-decoration: none;
+}
