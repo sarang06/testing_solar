@@ -4,13 +4,26 @@ html, body {
   font-family: 'Lato', sans-serif;
   }
 
-
+  textarea {
+    width: 300px;
+    height: 15px;
+  }
  
+
+  .zoom:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .zoom-img:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
 .navbar{
 
-  border: 1px solid;
+  /* border: 1px solid;
   padding: 10px;
-  box-shadow: 5px 5px 8px #888888;
+  box-shadow: 5px 5px 8px #888888; */
 
 } 
 
