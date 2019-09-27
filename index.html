@@ -164,9 +164,9 @@ window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-contai
 
 function send(){
 
-var phone= document.getElementById('8');
+var phoneNumber= document.getElementById('8');
 
-    firebase.auth().signInWithPhoneNumber(phone, window.recaptchaVerifier) 
+    firebase.auth().signInWithPhoneNumber(phoneNumber, window.recaptchaVerifier) 
 .then(function(confirmationResult) {
 
 confirmationResult.confirm(getElementById('cd'));
