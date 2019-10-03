@@ -11,9 +11,6 @@
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <!-- for owl caraousal -->
       <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-      <link href="lib/owlcarousel/assets/owl.carousel.default.css" rel="stylesheet">
-      <link href="lib/owlcarousel/owl.carousel.min.js" rel="stylesheet">
-      <link href="lib/owlcarousel/owl.carousel.js" rel="stylesheet">   
       <!-- google font lato -->
       <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
@@ -23,11 +20,6 @@
       <!-- favicon -->
       <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
       <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
-
-
-      <!-- animation -->
-
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
    </head>
    <body style="font-family: 'Lato', sans-serif;" data-spy="scroll" data-target=".navbar" onload="Captcha()">
       <nav class="navbar navbar-expand-lg  fixed-top navbar-light" id="nav-color">
@@ -63,63 +55,52 @@
       <!-- home section starts -->
 
       
-      <section id="home" >
-         
+      <section id="home"  >
+         <div class="container-fluid" >
+            
+            <div id="demo" class="carousel slide" data-ride="carousel">
 
-
-            <div class="caraousal-class text-center">
-
-               <header>
-                  <div class="owl-carousel owl-theme">
-                      <div class="item">
-                          <img src="img/here-to-serve.jpg" alt="images not found">
-                          <div class="cover" >
-                              <div class="container">
-                                  <div class="header-content">
-                                      
-                                      
-                                      <h1 data-aos="fade-up" data-aos-duration="1000">Here To Serve</h1>
-                                      <h4 data-aos="fade-down" data-aos-duration="1000">At tax acute we love to entertain our clients.</h4>
-                                  </div>
-                              </div>
-                           </div>
-                      </div>                    
-                      <div class="item">
-                          <img src="img/fullfilling-customer-experience.jpg" alt="images not found">
-                          <div class="cover">
-                              <div class="container">
-                                  <div class="header-content">
-                                      
-                                      
-                                      <h1>Fullfilling Customer Experience</h1>
-                                      <h4>We care for your money and time.</h4>
-                                  </div>
-                              </div>
-                           </div>
-                      </div>                
-                      <div class="item">
-                          <img src="img/commited-to-solutions.jpg" alt="images not found">
-                          <div class="cover">
-                              <div class="container">
-                                  <div class="header-content">
-                                      
-                                      
-                                      <h1>Commited To Solutions</h1>
-                                      <h4>We are dedicated for our customer's satisfaction</h4>
-                                  </div>
-                              </div>
-                           </div>
-                      </div>
+               <!-- Indicators -->
+               <ul class="carousel-indicators">
+                 <li data-target="#demo" data-slide-to="0" class="active"></li>
+                 <li data-target="#demo" data-slide-to="1"></li>
+                 <li data-target="#demo" data-slide-to="2"></li>
+               </ul>
+             
+               <!-- The slideshow -->
+               <div class="carousel-inner">
+                 <div class="carousel-item active">
+                     <img src="img/fullfilling-customer-experience.jpg" alt="fullfilling-customer-experience" class="img-fluid caraousal-img">
+                     <div class="text-on-img row"> <h1 style="font-size: 70px;font-family: 'Lato', sans-serif; font-weight: bold; color:#ffffff"> Fulfilling <br>customer experience</h1> </div>
                   </div>
-              </header>
-            </div>
+                 <div class="carousel-item">
+                   <img src="img/commited-to-solutions.jpg" alt="Chicago" class="img-fluid caraousal-img " >
+                   <div class="text-on-img row"> <h1 style="font-size: 70px;font-family: 'Lato', sans-serif; font-weight: bold;font-family: 'Lato', sans-serif; color:#ffffff"> Commited <br>To Solutions</h1> </div>
 
-         
+                 </div>
+                 <div class="carousel-item">
+                     <img src="img/here-to-serve.jpg" alt="" class="img-fluid caraousal-img">
+                   
+                     <div class="text-on-img row"> <h1 style="font-size: 70px ;font-family: 'Lato', sans-serif; color:#ffffff" > <b>Here To Serve</b></h1> </div>
+   
+                 </div>
+               </div>
+             
+               <!-- Left and right controls -->
+               <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                 <span class="carousel-control-prev-icon"></span>
+               </a>
+               <a class="carousel-control-next" href="#demo" data-slide="next">
+                 <span class="carousel-control-next-icon"></span>
+               </a>
+             
+             </div>
 
+         </div>
          
       </section>
       <!-- about us section  -->
-      <section id=about style="margin-top: 90px">
+      <section id=about >
          <div class="row line-padding" >
             
             <div class="col-lg-12">
@@ -165,7 +146,7 @@
          </div>
       </section>
       <!-- services section  -->
-      <section id="sercices" style="height: 100vh">
+      <section id="sercices" >
          <div class="row line-padding">
             
             <div class="col-lg-12">
@@ -250,10 +231,12 @@
             </div>
             <div class="container">
                <div class="row">
-                  <div class="col-lg-6">
-                    
+                  <div class="col-lg-7">
+                     <center style="padding-top: 40px">
+                        <!-- <h4 ><b>Fill in the form to contact us</b></h4> -->
+                     </center>
                      <div class="row" style="padding-top: 40px">
-                        <div class="col-md-12 col-sm-12 col-xs-12"  >
+                        <div class="col-md-12 col-sm-12 col-xs-12" data-aos="fade-up-right" data-aos-duration="2000" >
                            <div class="contact-form-area">
                               <div class="contact-form">
                                  <form  id="active-contact-form">
@@ -530,33 +513,26 @@
                         
                      </div>
                   </div>
-                  <div style="margin-top: 40px" class="col-lg-6" >
+                  <div style="margin-top: 50px" class="col-lg-5">
                      
                      <aside class="right-sidebar">
                         <div class="widget">
-
-                           <div class="card" style="font-family: 'Lato', sans-serif; font-size: 20px; margin-top: 3  0px">
-
-                                    <div class="text-center blue-head mt-2" style="font-size: 25px"> Tax-Acute Ltd </div>
-
+                           <!-- <h5 class="text-center" style="color: black">Contact information<span></span></h5> -->
+                           
+                           <div style="font-family: 'Lato', sans-serif; font-size: 20px">
                               <ul class="contact-info" >
-                                 
-                                 <i class="far fa-address-book icon new-font"  style="font-size: 35px">&nbsp; </i> 
-                                 
-                                    <div style="font-size: 17px">
-                                       <ul>Suite 1460,</ul>  
-                                       <ul> 176 Station Road,</ul>
-                                       <ul> Stanmore, Middlesex HA7 4AW</ul>
-                                    <ul> United Kingdom</ul>
-      
-                                    </div>
-<br>
-                                 
-                                 <div class="pb-5"><i class="fas fa-phone-square-alt icon new-font"  style="font-size: 35px" > &nbsp;</i> <div style="font-size: 17px"><ul>+44 (0)7815 156 428</ul></div>
+                                 <br><br> 
+                                 <i class="far fa-address-book icon new-font" ></i>   Suite 1460,  
+                                 <ul> 176 Station Road,</ul>
+                                 <ul> Stanmore, Middlesex HA7 4AW</ul>
+                              <ul> United Kingdom</ul>
+
+                                 <br>
+                                 <div class="py-4"><i class="fas fa-phone-square-alt icon new-font" ></i> +44 (0)7815 156 428
                                  </div>                                 
 
-                                 
-                                 <i class="fas fa-envelope-open-text icon new-font" style="font-size: 35px"> &nbsp;</i> <div style="font-size: 17px"><ul>viraljharia@gmail.com</ul></div>
+                                 <br><br>
+                                 <i class="fas fa-envelope-open-text icon new-font"> </i> viraljharia@gmail.com
 
                                  <!-- <i class="fab fa-linkedin"></i> <ul> </ul> -->
                               </ul>
@@ -607,7 +583,7 @@
                   <b class="gap"> <a href="#contact">CONTACT</a> </b>
                   </ul>
                   -->
-                     <!-- Social buttons --><!-- Social buttons -->
+               <!-- Social buttons --><!-- Social buttons -->
             </div>
             <div class="float-right col-lg-2">
                <!-- <img src="img/FinalTA - Copy.jpg" > -->
@@ -623,7 +599,19 @@
       <!-- owl script -->
       <script src="/node_modules/jquery/dist/jquery.js"></script>
       <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-      
+      <script type="text/javascript">
+         $(document).ready(function(){
+         $('.owl-carousel').owlCarousel({
+         
+         items:1,
+         itemsDesktop:[1199,4],
+            itemsDesktopSmall:[979,3],
+            itemsTablet:[768,2],
+            autoPlay: true,
+            itemsMobile:[479,1]
+         })
+         });
+      </script>
 
 
       <!-- ====================================================
@@ -720,55 +708,5 @@ $('a[href^="#"]').on('click', function (e) {
            })
        </script>
 
-
-
-
-<script>
-   $(document).ready(function() {
-// Transition effect for navbar
-$(window).scroll(function() {
-// checks if window is scrolled more than 500px, adds/removes solid class
-if($(this).scrollTop()> 680) {
- $('.navbar').addClass('solid');
-} else {
- $('.navbar').removeClass('solid');
-}
-});
-});
-   </script>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-
-
-
-<script>
-
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    dots:false,
-    nav:true,
-    mouseDrag:false,
-    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-    autoplay:true,
-    animateOut: 'fadeIn',
-    animateOut: 'fadeOut',
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-});
-</script>
 </body>
 </html>
